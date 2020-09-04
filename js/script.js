@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 ////// camiar nav a blanco en scroll ////////
 
-var nav = document.querySelector("header");
+var nav = document.getElementById("header-main");
 
 window.onscroll = function() {
   "use strict";
@@ -69,12 +69,12 @@ function openNav(){
         for (var i = 0; i < navListItem.length; i++) {
         navListItem[i].style.opacity = "1";
         }
-    }, 300);
+    }, 150);
     setTimeout(function() {
         for (var i = 0; i < navListItem.length; i++) {
         navListItem[i].style.transform = "translateY(0)";
         }
-    }, 350);
+    }, 200);
 }
 
 function closeNav(){
